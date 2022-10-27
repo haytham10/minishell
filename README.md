@@ -108,9 +108,9 @@ After running our lexer and expander, we have a two-dimensional array. Following
 {echo, "hello      there", how, are, 'you 'doing?, pixel, |, wc, -l, >, outfile, NULL}
 ```
 
-Now, our parser starts building the linked list of commands (``t_list *cmds``), which is filled in the following way:
+Now, our parser starts building the linked list of args (``t_args *arg``), which is filled in the following way:
 
-1. Iterate over the two-dimensional array
+1. Iterate over the one-dimensional array
 2. Whenever a redirection is found, check the type of redirection and retrieve a file descriptor containing the info we need as the infile
 3. Check that the file descriptor that has been opened is valid (!= -1) and continue
 4. If a pipe is found, add a new node to the list of commands
@@ -130,8 +130,6 @@ cmds:
 		outfile: 3 (fd corresponding to the open file 'outfile')
 		full_path: /bin/wc
 		full_cmd: {wc, -l, NULL}
-envp: (envp from main)
-pid: process ID of current instance
 ```
 
 ### Executor
