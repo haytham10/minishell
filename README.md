@@ -165,7 +165,7 @@ As mentioned previously, we use ``readline`` to read the string containing the s
 ```
 Bash@Allah $>
 ```
-[img]
+![Screenshot](https://github.com/haytham10/minishell/blob/main/imgs/1.png?raw=true)
 
 ## Extras
 
@@ -177,7 +177,7 @@ When running new instances of minishell or minishell withouth environment (``env
 
 Here's the env when minishell is launched without an environment:
 
-![Screenshot from 2021-11-24 13-32-04](https://user-images.githubusercontent.com/40824677/143238979-4b8688f7-18ad-4c95-a380-496e5fc2ab17.png)
+![Screenshot](https://raw.githubusercontent.com/haytham10/minishell/main/imgs/2.png)
 
 
 ## Installation
@@ -209,17 +209,17 @@ As we developed the project, we recorded some demos of how the project looked. H
 
 * ``v1.0`` Basic stuff working, no pipes or exit status redirection
 
-![minishell](https://user-images.githubusercontent.com/40824677/141175675-41b940ba-7080-4f1f-add5-edaf79ed6b8d.gif)
+![minishell](https://raw.githubusercontent.com/haytham10/minishell/main/imgs/3.png)
 
 
 * ``v2.0`` Pipes working, plus some exit statuses
 
-![minishell](https://user-images.githubusercontent.com/40824677/141684153-e2748818-8a01-4cf8-88a6-5ed2624e2ce6.gif)
+![minishell](https://raw.githubusercontent.com/haytham10/minishell/main/imgs/4.png)
 
 
 * ``v3.0`` Heavily cleaned code, misc fixes, ready for submission :)
 
-![minishell](https://user-images.githubusercontent.com/40824677/143232233-4e385114-441f-4e3e-b3ba-477bc75454e1.gif)
+![minishell](https://raw.githubusercontent.com/haytham10/minishell/main/imgs/5.png)
 
 
 ## References
