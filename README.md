@@ -1,6 +1,4 @@
-# minishell | 1337-KH
-
-[![hmokhtar's 42 minishell Score](https://badge42.vercel.app/api/v2/cl9rg4yop01490gjwu202zrsw/project/2636394)](https://github.com/JaeSeoKim/badge42) 
+# minishell | 1337-KH [![hmokhtar's 42 minishell Score](https://badge42.vercel.app/api/v2/cl9rg4yop01490gjwu202zrsw/project/2636394)](https://github.com/JaeSeoKim/badge42) 
 As beautiful as a shell 🐚
 ### Table of Contents
 
