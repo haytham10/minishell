@@ -24,21 +24,21 @@ As beautiful as a shell 🐚
 
 ## Introduction
 
-This project is all about recreating your very own (mini)shell, taking bash (Bourne Again SHell) as reference. This was our first group project, and I was honored to do it with [@amalsenhaji](https://github.com/amalsenhaji) :)
+This project is all about recreating your very own (mini)shell, taking bash (Bourne Again SHell) as a reference.
 
 
-#### What the Shell?
+#### What is Shell?
 
-As we just said, we are asked to implement our own shell, but what is a shell to begin with? If we think of (for example) Linux as a nut or a seashell, the kernel/seed is the core of the nut and has to be surrounded by a cover or shell. Likewise, the shell we are implementing works as a command interpreter communicating with the OS kernel in a secure way, and allows us to perform a number tasks from a command line, namely execute commands, create or delete files or directories, or read and write content of files, among (many) other things
+As we just said, we are asked to implement our shell, but what is a shell to begin with? If we think of (for example) Linux as a nut or a seashell, the kernel/seed is the nut's core and must be surrounded by a cover or shell. Likewise, the shell we are implementing works as a command interpreter securely communicating with the OS kernel, and allows us to perform several tasks from a command line, namely execute commands, create or delete files or directories, or read and write content of files, among (many) other things
 
 ## Our Implementation of Minishell
 
-The general idea for this shell is reading a string of commands in a prompt using [readline](https://www.man7.org/linux/man-pages/man3/readline.3.html). Before anything, it is highly recommended to take a deep dive into the [bash manual](https://www.gnu.org/software/bash/manual/bash.html), as it goes over every detail we had to have in mind when doing this project. ``Minishell`` involves heavy parsing of the string read by ``readline``, thus it is crucial to divide the code of the project into different parts: the ``lexer``, the ``expander``, the ``parser``, and lastly the ``executor``
+The general idea for this shell is to read a string of commands in a prompt using [readline](https://www.man7.org/linux/man-pages/man3/readline.3.html). Before anything, it is highly recommended to take a deep dive into the [bash manual](https://www.gnu.org/software/bash/manual/bash.html), as it goes over every detail we had to consider when doing this project. ``Minishell`` involves heavy parsing of the string read by ``readline``, thus it is crucial to divide the code of the project into different parts: the ``lexer``, the ``expander``, the ``parser``, and lastly the ``executor``
 
 
 ### Lexer and Expander
 
-This first part covers the part of our code in charge of expanding environment variables with ``$`` followed by characters, Here we also split the input string into small chunks or tokens to better handle pipes, redirections, and expansions.
+This first part covers the part of our code in charge of expanding environment variables with ``$`` followed by characters, Here we also split the input string into small chunks or tokens to handle pipes, redirections, and expansions better.
 
 After reading from the ``stdin`` we use a function which separates the string taking spaces and quotes into account. For example:
 
@@ -61,7 +61,7 @@ output: {echo, "hello      there", how, are, 'you 'doing?, pixel, |, wc, -l, >, 
 
 ### Parser
 
-The parser is in charge of storing the tokenized string and save it in a useful manner for the executor to use later. Our data structure is managed as follows:
+The parser is in charge of storing the tokenized string and saving it in a useful manner for the executor to use later. Our data structure is managed as follows:
 
 ```C
 typedef struct s_args
