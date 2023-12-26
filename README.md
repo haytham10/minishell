@@ -238,6 +238,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Authors
 
 - [@Haytham Mokhtari](https://github.com/haytham10)
-- [@Amal Senhaji](https://github.com/amalsenhaji)
 
 Octobre 27th, 2022
